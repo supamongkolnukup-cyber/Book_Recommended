@@ -1,0 +1,134 @@
+body {
+    color: #111728;
+}
+
+header {
+    background-color: #111728;
+}
+
+.hero {
+    background-color: #ff6652;
+    text-indent: 3em;
+    text-align: center;
+}
+
+.tagline {
+    background-color: #111728;
+    color: white;
+}
+
+h2 {
+    color: #DE402B;
+    font-size: 30px;
+}
+
+h3 {
+    color: #ff6652;
+}
+
+h4 {
+    font-size: 24px;
+    color: #DE402B;
+}
+
+p  {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #111728;
+    color: white;
+}
+
+/* ซ่อนปุ่มปิดไว้บนหน้าจอขนาดใหญ่ */
+.close-menu {
+    display: none;
+}
+
+/* เมนูเต็มหน้าจอเฉพาะมือถือ */
+@media (max-width: 767.98px) {
+    /* ลดเอฟเฟกต์เปิด-ปิดของ Bootstrap */
+    #mainMenu.collapsing {
+        transition: none !important;
+    }
+
+    /* พื้นที่เมนูเต็มหน้าจอ */
+    #mainMenu.collapse.show,
+    #mainMenu.collapsing {
+        display: block;
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+        padding: 75px 28px 20px;
+        margin: 0;
+        background-color: #111728;
+        overflow-y: auto;
+        z-index: 1055;
+        transition: none !important;
+    }
+
+    /* ปุ่มปิดมุมขวาบน */
+    #mainMenu .close-menu {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 28px;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #111;
+        font-size: 36px;
+        line-height: 1;
+        cursor: pointer;
+        z-index: 1060;
+    }
+
+    /* รายการเมนูเรียงลงมาเต็มความกว้าง */
+    #mainMenu .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    #mainMenu .nav-item {
+        width: 100%;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    #mainMenu .nav-link {
+        display: block;
+        padding: 16px 0;
+        color: #ffffff !important;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+/* ฟ้อน */
+h1,h2,h3 {
+  font-family: "Noto Serif Thai", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+p {
+.sarabun-semibold {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sarabun-semibold-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+}
